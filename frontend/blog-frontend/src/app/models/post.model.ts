@@ -1,4 +1,3 @@
-// src/app/models/post.model.ts
 export interface Post {
   category: any;
 is_published: any;
@@ -18,7 +17,7 @@ export interface PostCreate {
   is_favorite: boolean;
 }
 
-// src/app/models/comment.model.ts
+// comment.model.ts
 export interface Comment {
   id: number;
   post: number;
@@ -35,7 +34,7 @@ export interface CommentCreate {
   content: string;
 }
 
-// src/app/models/pagination.model.ts
+// pagination.model.ts
 export interface PaginatedResponse<T> {
   count: number;
   next: string | null;
@@ -43,7 +42,7 @@ export interface PaginatedResponse<T> {
   results: T[];
 }
 
-// src/app/models/stats.model.ts
+// stats.model.ts
 export interface PostStats {
   total_posts: number;
   favorite_posts: number;

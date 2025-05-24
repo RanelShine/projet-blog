@@ -1,4 +1,3 @@
-// src/app/models/comment.model.ts
 export interface Comment {
   id: number;
   post: number;
