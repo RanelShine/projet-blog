@@ -1,3 +1,4 @@
+#comments/views.py
 from rest_framework import generics, status, filters
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
@@ -25,7 +26,7 @@ class CommentListCreateView(generics.ListCreateAPIView):
     filter_backends = [filters.SearchFilter, filters.OrderingFilter]
     search_fields = ['author', 'content']
     ordering_fields = ['created_at', 'author']
-    ordering = ['-created_at']  # Tri par défaut par date décroissante
+    ordering = ['-created_at']  
     
     def get_serializer_class(self):
         if self.request.method == 'POST':

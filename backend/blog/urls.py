@@ -1,3 +1,4 @@
+#blog/urls.py
 from django.urls import path
 from . import views
 from comments.views import post_comments,add_comment_to_post
