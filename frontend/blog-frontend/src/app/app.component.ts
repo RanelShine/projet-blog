@@ -11,7 +11,7 @@ import { CommonModule } from '@angular/common';
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
       <div class="container">
         <a class="navbar-brand" routerLink="/">
-          <i class="fas fa-blog me-2"></i>Mon Blog
+          <i class="fas fa-blog me-2"></i>RBlog
         </a>
         
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -58,7 +58,7 @@ import { CommonModule } from '@angular/common';
       <div class="container">
         <p class="mb-0 text-muted">
           <i class="fas fa-code me-1"></i>
-          Blog Angular & Django - {{ currentYear }}
+          © Ranelle - {{ currentYear }}
         </p>
       </div>
     </footer>
@@ -86,5 +86,8 @@ import { CommonModule } from '@angular/common';
   `]
 })
 export class AppComponent {
+  title(title: any) {
+    throw new Error('Method not implemented.');
+  }
   currentYear = new Date().getFullYear();
 }

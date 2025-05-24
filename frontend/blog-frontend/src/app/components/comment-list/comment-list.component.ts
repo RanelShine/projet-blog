@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
   selector: 'app-comment-list',
   imports: [],
   templateUrl: './comment-list.component.html',
-  styleUrl: './comment-list.component.scss'
+  styleUrls: ['./comment-list.component.scss']
 })
 export class CommentListComponent {
 

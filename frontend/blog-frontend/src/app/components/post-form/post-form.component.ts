@@ -4,7 +4,6 @@ import { CommonModule } from '@angular/common';
 import { ReactiveFormsModule, FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { ActivatedRoute, Router, RouterLink } from '@angular/router';
 import { PostService } from '../../services/post.service';
-import { Post } from '../../models/post.model';
 
 @Component({
   selector: 'app-post-form',
@@ -19,9 +18,9 @@ import { Post } from '../../models/post.model';
               <div class="d-flex justify-content-between align-items-center">
                 <h2 class="card-title mb-0">
                   <i class="fas fa-edit me-2"></i>
-                  {{ isEditMode ? 'Modifier l\'article' : 'Créer un nouvel article' }}
+                  {{ isEditMode ? "Modifier l'article" : "Créer un nouvel article" }}
                 </h2>
-                <a routerLink="/posts" class="btn btn-outline-secondary">
+                <a routerLink="/posts" class="btn btn-primary">
                   <i class="fas fa-arrow-left me-1"></i>
                   Retour
                 </a>

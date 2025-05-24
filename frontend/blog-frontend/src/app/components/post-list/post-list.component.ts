@@ -1,4 +1,3 @@
-// src/app/components/post-list/post-list.component.ts
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterLink } from '@angular/router';
@@ -118,7 +117,7 @@ import { Post, PaginatedResponse } from '../../models/post.model';
                       class="btn btn-outline-danger" 
                       (click)="deletePost(post)"
                       title="Supprimer">
-                      <i class="fas fa-trash"></i>
+                      <i class="fas fa-trash"></i> Supprimer
                     </button>
                   </div>
                 </div>
